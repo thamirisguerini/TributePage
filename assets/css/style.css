@@ -1,23 +1,18 @@
 *{
-	margin:0;
-	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
 }
 body{
-	font-family: 'Raleway', sans-serif;
-	font-size:20px;
+    margin: 0;
+    padding: 0;	
 }
 header{
     display: flex;
-    padding-top:10px;
-	padding-bottom:10px;
-    height: 120px;
+    justify-content: center;    
 	background: #282828;
-    justify-content: center;
 }
 .container{
-    width: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 } 
 .logo{
     display: flex;
@@ -29,7 +24,15 @@ header{
 .menu{
     display: flex;
     align-items: center;
-    text-align: center;
+    padding-top:10px;
+	padding-bottom:10px;
+    font-size: 20px;
+}
+.destaque_menu{
+    background-color: #bda169;
+    height: 8px;
+    width: 100%;
+    border: 1px solid #7e5f0d;
 }
 nav ul,
 nav li{
@@ -55,24 +58,96 @@ nav a:hover {
 #banner_paul{
     display: flex;
     background-color: rgb(16, 16, 16);
-    background-size: cover;
+    background-position: center;
+    background-size:cover;
     height: auto;
 }
-.img_paul img{
-    display: flex;
-    width: 100%;
-    justify-content:right;
+.banner_img{
+    justify-content: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 140px;
 }
-.banner_title{
-    flex:1;
-    color: #ffffff;
+.banner_desc h1{
+    color: #bda169;
+    font-size: 80px;
+    text-shadow: 0px 2px 0px #7e5f0d;
+    margin: 0;
+    padding: 0;
+    margin-top: 140px;
     text-align: center;
-    font-size: 100px;
-    text-shadow: 0px 3px 0px #bda169;
-    margin-top: 90px;
 }
-.banner_desc{
-    font-size: 50px;
-    color:#bda169 ;
-    text-shadow: 0px 0px 0px #ffffff;
+.banner_desc h2{
+    color: #bda169;
+    font-size: 40px;
+    text-shadow: 0px 2px 0px #7e5f0d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#geral{
+    background-color: #2c3e50;
+    padding: 20px;
+}
+.img_biblio{
+    display: flex;
+    justify-content: center;
+}
+.img_biblio img{
+    width: 400px;
+    border: 2px solid #bda169;
+    border-radius: 2px;
+}
+.img_biblio figcaption{
+    text-align: center;
+    color: #7e5f0d;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.biblio_title{
+   font-size: 40px;
+   color: #ffffff;
+   font-weight: bold;
+}
+.widget_title_bar{
+    width:60px;
+    height: 3px;
+    background-color: #7e5f0d;
+    margin-top: 2px;
+}
+.Biogra_resumo{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#geral_carreira{
+    background-color: #282828;
+    padding: 20px;
+}
+.img_car{
+    display: flex;
+    flex-direction: row;    
+}
+.img_car img{
+    width: 400px;
+    border: 2px solid #bda169;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+.img_mort{
+    display: flex;
+    flex-direction: row; 
+}
+.img_mort img{
+    width: 350px;
+    border: 2px solid #bda169;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-top: 25px;
 }
